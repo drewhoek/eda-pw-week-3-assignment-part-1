@@ -50,7 +50,7 @@ console.log( 'Added an animal to end,', animalArray );
 
 // 4.a. TODO: Add a new food at the end of your array & log the array
 foodsArray.push( 'Chinese' )
-console.log( 'added a food to end,', foodsArray );
+console.log( 'Added a food to end,', foodsArray );
 
 
 // Example: Remove the last animal by using Array.pop
@@ -65,8 +65,8 @@ console.log( 'Removed last food,', removedFood );
 console.log( 'The foods are now,', foodsArray );
 
 // Example: Add an animal to the beginning using Array.unshift
-animalArray.unshift('walrus');
-console.log(`Added an animal to beginning: ${animalArray}`);
+animalArray.unshift( 'walrus' );
+console.log( `Added an animal to beginning: ${animalArray}` );
 
 // 4.c. TODO: Add a food at the beginning of the array & log the array
 foodsArray.unshift( 'Fried Rice' );
@@ -95,19 +95,19 @@ console.log( 'Replaced second food, new foods are,', foodsArray );
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.
 let descFoodsArray = foodsArray.sort().reverse();
-console.log( 'Foods sorted in reverse order:', descFoodsArray );
+console.log( 'Foods sorted in reverse order: ', descFoodsArray );
 
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
 let foodsString = foodsArray.toString();
-let andFoodsString = foodsString.replaceAll( ',', ' and ' )
-console.log( 'Foods array sorted in reverse, turned into string and commas replaced with and:', andFoodsString );
+let andFoodsString = foodsString.replaceAll( ',' , ' and ' );
+console.log( 'Foods array sorted in reverse, turned into string and commas replaced with and: ', andFoodsString );
 
 // 4.h (STRETCH) TODO: Make a new array that combines 
 //     the favorite foods array with the animals array.
 //     Then log the new array.
 //     It should look something like:
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
-let combinedArray = foodsArray.concat(animalArray);
-console.log( 'Combinened array looks like this:', combinedArray );
+let combinedArray = foodsArray.concat( animalArray );
+console.log( 'Combined array looks like this: ', combinedArray );
