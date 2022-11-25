@@ -45,11 +45,12 @@ console.log( 'Last animal is', animalArray[ animalArray.length - 1 ], '(STRETCH)
 console.log('--- 4. Adding and removing array items ---');
 
 // Example: Add an animal to the end using Array.push
-animalArray.push('penguin');
-console.log('Added an animal to end,', animalArray);
+animalArray.push( 'penguin' );
+console.log( 'Added an animal to end,', animalArray );
 
 // 4.a. TODO: Add a new food at the end of your array & log the array
-
+foodsArray.push( 'Chinese' )
+console.log( 'added a food to end,', foodsArray );
 
 
 // Example: Remove the last animal by using Array.pop
@@ -59,36 +60,54 @@ console.log('The animals are now', animalArray);
 
 // 4.b. TODO: Remove the food at the end of your array & 
 //      log both the food removed and the updated array
-
+let removedFood = foodsArray.pop();
+console.log( 'Removed last food,', removedFood );
+console.log( 'The foods are now,', foodsArray );
 
 // Example: Add an animal to the beginning using Array.unshift
 animalArray.unshift('walrus');
 console.log(`Added an animal to beginning: ${animalArray}`);
 
 // 4.c. TODO: Add a food at the beginning of the array & log the array
-
+foodsArray.unshift( 'Fried Rice' );
+console.log( `Added a food to the beginning: ${foodsArray}` );
 
 // Example: Remove the first animal using Array.shift
 removedAnimal = animalArray.shift();
-console.log('Removed the first animal', removedAnimal);
-console.log('The animals are now', animalArray);
+console.log( 'Removed the first animal', removedAnimal );
+console.log( 'The animals are now', animalArray );
 
 // 4.d TODO: Remove the food at the beginning of your array & 
 //     log both the food removed and the updated array
+removedFood = foodsArray.shift();
+console.log( 'Removed the first food', removedFood ); 
+console.log( 'The foods are now', foodsArray );
 
 // 4.e (STRETCH) TODO: Replace the second food in your array
 //      with another one of your favorite foods.
 //      Then log the updated array.
+let foodsIndex = foodsArray.indexOf( 'tacos' );
+console.log( foodsIndex );
+foodsArray.splice( foodsIndex, 1, 'steak' );
+console.log( 'Replaced second food, new foods are,', foodsArray );
+
 
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.
+let descFoodsArray = foodsArray.sort().reverse();
+console.log( 'Foods sorted in reverse order:', descFoodsArray );
 
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
+let foodsString = foodsArray.toString();
+let andFoodsString = foodsString.replaceAll( ',', ' and ' )
+console.log( 'Foods array sorted in reverse, turned into string and commas replaced with and:', andFoodsString );
 
 // 4.h (STRETCH) TODO: Make a new array that combines 
 //     the favorite foods array with the animals array.
 //     Then log the new array.
 //     It should look something like:
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
+let combinedArray = foodsArray.concat(animalArray);
+console.log( 'Combinened array looks like this:', combinedArray );
