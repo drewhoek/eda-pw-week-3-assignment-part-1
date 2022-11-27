@@ -16,7 +16,7 @@ console.log( 'Favorite foods are: ', foodsArray );
 
 
 // 2. Array.length - tells you how many items are in the array
-console.log('--- 2. Length of an array ---');
+console.log( '--- 2. Length of an array ---' );
 
 // Example: How many animals are in the array? 
 console.log( 'Number of animals: ', animalArray.length );
@@ -55,8 +55,8 @@ console.log( 'Added a food to end,', foodsArray );
 
 // Example: Remove the last animal by using Array.pop
 let removedAnimal = animalArray.pop();
-console.log('Removed the last animal', removedAnimal);
-console.log('The animals are now', animalArray);
+console.log( 'Removed the last animal', removedAnimal) ;
+console.log( 'The animals are now', animalArray) ;
 
 // 4.b. TODO: Remove the food at the end of your array & 
 //      log both the food removed and the updated array
@@ -66,11 +66,11 @@ console.log( 'The foods are now,', foodsArray );
 
 // Example: Add an animal to the beginning using Array.unshift
 animalArray.unshift( 'walrus' );
-console.log( `Added an animal to beginning: ${animalArray}` );
+console.log( `Added an animal to beginning: ${ animalArray }` );
 
 // 4.c. TODO: Add a food at the beginning of the array & log the array
 foodsArray.unshift( 'Fried Rice' );
-console.log( `Added a food to the beginning: ${foodsArray}` );
+console.log( `Added a food to the beginning: ${ foodsArray }` );
 
 // Example: Remove the first animal using Array.shift
 removedAnimal = animalArray.shift();
